@@ -72,7 +72,7 @@ async function renderOrders (userId) {
 		liEl.classList.add('order-item')
 		nameEl.classList.add('order-name')
 		countEl.classList.add('order-count')
-		imgEl.setAttribute('src',"./public" +food.food_img.split('').splice(1,50).join(''))
+		imgEl.setAttribute('src',food.food_img)
 
 		nameEl.textContent = food.food_name
 		countEl.textContent = order.count
